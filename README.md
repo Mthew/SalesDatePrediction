@@ -9,11 +9,21 @@ Para ejecutar el proyecto, sigue estos pasos:
 
 2. **Arquitectura del Proyecto**:
 
+   - La Solucion de los puntos de T-SQL y las consultas DML se encuentran en el archivo `store-procedure.sql` ubicado en `./doc`.
+
+3. **Arquitectura del Proyecto**:
+
    - El proyecto utiliza una arquitectura limpia (Clean Architecture), basada en los principios SOLID y el patrón CQRS.
 
-3. **Estructura del Proyecto**:
+4. **Estructura del Proyecto**:
+
    - **API**: Contiene la Web API.
    - **CORE**: Incluye la capa de dominio y la capa de aplicación, encargada de aplicar la lógica de negocio.
    - **Infraestructura**: Implementa la base de datos.
+
+5. **Paso a seguir**:
+
+   - Crear la suit de testing
+   - implemetar el front-end en angular 17
 
 Siguiendo estos pasos, podrás configurar y ejecutar el proyecto correctamente.
