@@ -7,9 +7,9 @@ Para ejecutar el proyecto, sigue estos pasos:
    - Primero, instala la base de datos que se encuentra en la carpeta `./doc/recursos`.
    - Luego, ejecuta el archivo `store-procedure.sql` ubicado en `./doc`.
 
-2. **Arquitectura del Proyecto**:
+2. **DML y T-SQL**:
 
-   - La Solucion de los puntos de T-SQL y las consultas DML se encuentran en el archivo `store-procedure.sql` ubicado en `./doc`.
+   - La Solución de los puntos de T-SQL y las consultas DML se encuentran en el archivo `store-procedure.sql` ubicado en `./doc`.
 
 3. **Arquitectura del Proyecto**:
 
