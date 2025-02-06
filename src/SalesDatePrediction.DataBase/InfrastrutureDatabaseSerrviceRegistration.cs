@@ -7,7 +7,7 @@ using SalesDatePrediction.Infrastructure.Repositories;
 
 namespace SalesDatePrediction.Infrastructure
 {
-    internal static class InfrastrutureDatabaseSerrviceRegistration
+    public static class InfrastructureDatabaseServiceRegistration
     {
         public static IServiceCollection AddInfrastructureDatabaseServicesRegistration(this IServiceCollection services, IConfiguration configuration)
         {
@@ -21,6 +21,9 @@ namespace SalesDatePrediction.Infrastructure
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped(typeof(IAsyncRepository<>), typeof(AsyncRepository<>));
+
+            //Repositories
+            services.AddScoped<IOrderRepository, OrderRepository>();
 
 
             return services;

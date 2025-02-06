@@ -15,13 +15,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{CDD15114-AD2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C6F1552C-C705-4738-B974-9B2C315BC064}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesDatePrediction.Application", "src\SalesDatePrediction.Application\SalesDatePrediction.Application.csproj", "{30FDE40F-19CC-4893-9576-F6C603E0F465}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesDatePrediction.Application", "src\SalesDatePrediction.Application\SalesDatePrediction.Application.csproj", "{30FDE40F-19CC-4893-9576-F6C603E0F465}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesDatePrediction.DataBase", "src\SalesDatePrediction.DataBase\SalesDatePrediction.DataBase.csproj", "{F4857D90-8A0B-4879-9194-5DB35326B0EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesDatePrediction.Infrastructure", "src\SalesDatePrediction.DataBase\SalesDatePrediction.Infrastructure.csproj", "{F4857D90-8A0B-4879-9194-5DB35326B0EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesDatePrediction.Domain", "src\SalesDatePrediction.Domain\SalesDatePrediction.Domain.csproj", "{03E20FFA-280E-4C20-9CDB-FFCA77FE1023}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesDatePrediction.Domain", "src\SalesDatePrediction.Domain\SalesDatePrediction.Domain.csproj", "{03E20FFA-280E-4C20-9CDB-FFCA77FE1023}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesDatePrediction.API", "src\SalesDatePrediction.API\SalesDatePrediction.API.csproj", "{F52B0E76-FE29-4DA4-B0DB-3C35E245B179}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesDatePrediction.API", "src\SalesDatePrediction.API\SalesDatePrediction.API.csproj", "{F52B0E76-FE29-4DA4-B0DB-3C35E245B179}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
