@@ -1,12 +1,4 @@
-﻿using MediatR;
-using SalesDatePrediction.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SalesDatePrediction.Application.Feature.Order.Queries.GetByClientId
+﻿namespace SalesDatePrediction.Application.Feature.Order.Queries.GetByClientId
 {
     public class GetOrdersByClientIdMV
     {

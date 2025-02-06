@@ -8,10 +8,10 @@ GO
 -- =============================================
 -- Author:		Mateo Renteria Lujan
 -- Create date: 12-08-2024
--- Version:		1.0.1
+-- Version:		1.0.5
 -- Description:	Procedimiento almacenado para obtener las ordenes de los clientes y predecir cuando va a realizar una nueva orden
 -- =============================================
-CREATE PROCEDURE [dbo].[sp_GetSalesDatePrediction] AS BEGIN	
+ALTER PROCEDURE [dbo].[sp_GetSalesDatePrediction] AS BEGIN	
 	WITH Diffs AS (
 		SELECT 
 			custid,
@@ -21,7 +21,7 @@ CREATE PROCEDURE [dbo].[sp_GetSalesDatePrediction] AS BEGIN
 			[Sales].Orders
 	)
 	SELECT 
-		[Customer Name] = CONCAT(MAX(c.companyname), ' - ', MAX(c.contactname)),
+		[CustomerName] = CONCAT(MAX(c.companyname), ' - ', MAX(c.contactname)),
 		[LastOrderDate] = MAX(d.orderdate),
 		[NextPredictedOrder] = DATEADD(DAY, AVG(DATEDIFF(DAY, BeforeDate, orderdate)), MAX(d.orderdate))
 	FROM 
@@ -92,3 +92,6 @@ END
 
 
 --DECLARE @DetailsJson NVARCHAR(MAX) = N'[{"Orderid":1,"Productid":101,"Unitprice":25.5,"Qty":2,"Discount":0.1},{"Orderid":2,"Productid":102,"Unitprice":15.75,"Qty":3,"Discount":0.05},{"Orderid":3,"Productid":103,"Unitprice":30,"Qty":1,"Discount":0.15},{"Orderid":4,"Productid":104,"Unitprice":22.25,"Qty":4,"Discount":0.2},{"Orderid":5,"Productid":105,"Unitprice":18,"Qty":5,"Discount":0.1},{"Orderid":6,"Productid":106,"Unitprice":12.5,"Qty":2,"Discount":0.25},{"Orderid":7,"Productid":107,"Unitprice":27,"Qty":3,"Discount":0.05},{"Orderid":8,"Productid":108,"Unitprice":35,"Qty":1,"Discount":0.15},{"Orderid":9,"Productid":109,"Unitprice":20,"Qty":4,"Discount":0.2},{"Orderid":10,"Productid":110,"Unitprice":14.25,"Qty":5,"Discount":0.1}]'
+
+
+sp_GetSalesDatePrediction

@@ -2,6 +2,8 @@ using AutoMapper.Internal;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using SalesDatePrediction.Application.Feature.Order.Queries.GetByClientId;
+using SalesDatePrediction.Application.Feature.SalesDatePrediction.Queries.GetAll;
+using System.Net;
 
 namespace SalesDatePrediction.API.Controllers
 {
@@ -18,10 +20,25 @@ namespace SalesDatePrediction.API.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet(Name = "GetOrder")]
-        public async Task<IActionResult> GetMessage(int clientId)
+        [HttpGet(Name = "getOrderByCustomerId")]
+        [ProducesResponseType(typeof(IEnumerable<GetOrdersByClientIdMV>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        public async Task<IActionResult> GetMessage(int customerId)
         {
-            var response = await _mediator.Send(new GetOrdersByClientIdQuery(clientId));
+            var response = await _mediator.Send(new GetOrdersByClientIdQuery(customerId));
+            return Ok(response);
+        }
+
+        [HttpGet("getSaleDatePrediction")]
+        [ProducesResponseType(typeof(IEnumerable<GetAllSalesDatePredictionMV>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        public async Task<IActionResult> GetSaleDatePrediction()
+        {
+            var response = await _mediator.Send(new GetAllSalesDatePredictionQuery());
             return Ok(response);
         }
     }

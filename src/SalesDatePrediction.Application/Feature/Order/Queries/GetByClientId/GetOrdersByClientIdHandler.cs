@@ -1,12 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
 using SalesDatePrediction.Application.Contracts.Persistence;
-using SalesDatePrediction.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SalesDatePrediction.Application.Feature.Order.Queries.GetByClientId
 {

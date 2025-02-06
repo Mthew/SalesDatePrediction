@@ -1,10 +1,6 @@
-﻿using SalesDatePrediction.Application.Contracts.Persistence;
+﻿using Microsoft.EntityFrameworkCore;
+using SalesDatePrediction.Application.Contracts.Persistence;
 using SalesDatePrediction.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SalesDatePrediction.Infrastructure.Repositories
 {
@@ -17,10 +13,10 @@ namespace SalesDatePrediction.Infrastructure.Repositories
             _context = context;
         }
 
-        public Task<List<Order>> GetByCustomerId(int customerId)
-        {
-            return Task.FromResult(_context.Orders
+        public Task<List<Order>> GetByCustomerId(int customerId) => Task.FromResult(_context.Orders
                 .Where(x => x.Custid == customerId).ToList());
-        }
+
+        public async Task<List<SaleDatePredictionList>> GetSaleDatePredictions() =>
+             await _context.SaleDatePredictionLists.FromSqlRaw($"[dbo].[sp_GetSalesDatePrediction]").ToListAsync();
     }
 }
