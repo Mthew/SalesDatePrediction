@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SalesDatePrediction.Domain;
 
-namespace SalesDatePrediction.DataBase;
+namespace SalesDatePrediction.Infrastructure;
 
 public partial class StoreSampleContext : DbContext
 {

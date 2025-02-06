@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace SalesDatePrediction.Domain;
+﻿namespace SalesDatePrediction.Domain;
 
 public partial class Supplier
 {

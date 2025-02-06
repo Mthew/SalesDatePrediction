@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DesarolloMatipos5\\source\\repos\\SalesDatePrediction\\src\\SalesDatePrediction.Application\\SalesDatePrediction.Application.csproj",
+      "projectUniqueName": "C:\\Users\\DesarolloMatipos5\\source\\repos\\Sales-Date-Predition\\SalesDatePrediction\\src\\SalesDatePrediction.Application\\SalesDatePrediction.Application.csproj",
       "projectName": "SalesDatePrediction.Application",
-      "projectPath": "C:\\Users\\DesarolloMatipos5\\source\\repos\\SalesDatePrediction\\src\\SalesDatePrediction.Application\\SalesDatePrediction.Application.csproj",
+      "projectPath": "C:\\Users\\DesarolloMatipos5\\source\\repos\\Sales-Date-Predition\\SalesDatePrediction\\src\\SalesDatePrediction.Application\\SalesDatePrediction.Application.csproj",
       "packagesPath": "C:\\Users\\DesarolloMatipos5\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DesarolloMatipos5\\source\\repos\\SalesDatePrediction\\src\\SalesDatePrediction.Application\\obj\\",
+      "outputPath": "C:\\Users\\DesarolloMatipos5\\source\\repos\\Sales-Date-Predition\\SalesDatePrediction\\src\\SalesDatePrediction.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

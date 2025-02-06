@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DesarolloMatipos5\\source\\repos\\SalesDatePrediction\\src\\SalesDatePrediction.API\\SalesDatePrediction.API.csproj": {}
+    "C:\\Users\\DesarolloMatipos5\\source\\repos\\Sales-Date-Predition\\SalesDatePrediction\\src\\SalesDatePrediction.API\\SalesDatePrediction.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DesarolloMatipos5\\source\\repos\\SalesDatePrediction\\src\\SalesDatePrediction.API\\SalesDatePrediction.API.csproj": {
+    "C:\\Users\\DesarolloMatipos5\\source\\repos\\Sales-Date-Predition\\SalesDatePrediction\\src\\SalesDatePrediction.API\\SalesDatePrediction.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DesarolloMatipos5\\source\\repos\\SalesDatePrediction\\src\\SalesDatePrediction.API\\SalesDatePrediction.API.csproj",
+        "projectUniqueName": "C:\\Users\\DesarolloMatipos5\\source\\repos\\Sales-Date-Predition\\SalesDatePrediction\\src\\SalesDatePrediction.API\\SalesDatePrediction.API.csproj",
         "projectName": "SalesDatePrediction.API",
-        "projectPath": "C:\\Users\\DesarolloMatipos5\\source\\repos\\SalesDatePrediction\\src\\SalesDatePrediction.API\\SalesDatePrediction.API.csproj",
+        "projectPath": "C:\\Users\\DesarolloMatipos5\\source\\repos\\Sales-Date-Predition\\SalesDatePrediction\\src\\SalesDatePrediction.API\\SalesDatePrediction.API.csproj",
         "packagesPath": "C:\\Users\\DesarolloMatipos5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DesarolloMatipos5\\source\\repos\\SalesDatePrediction\\src\\SalesDatePrediction.API\\obj\\",
+        "outputPath": "C:\\Users\\DesarolloMatipos5\\source\\repos\\Sales-Date-Predition\\SalesDatePrediction\\src\\SalesDatePrediction.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

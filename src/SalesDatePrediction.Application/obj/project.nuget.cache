@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XpIGkJHz7DFwCxmh+DMsrzrJ4lg1t79or69BSn24ofYXafXGCcLAKP6oyPpC8XCW6tCDQOcNMNAYIRxhzsanBg==",
+  "dgSpecHash": "OElv5+TCxVth3+p1klXgVNkBmI9k6wGMlrP65relTZ1tWFSPaK3vespCVcWrI3kVW7m78OO/s0a/ZZ9tTRvyVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DesarolloMatipos5\\source\\repos\\SalesDatePrediction\\src\\SalesDatePrediction.Application\\SalesDatePrediction.Application.csproj",
+  "projectFilePath": "C:\\Users\\DesarolloMatipos5\\source\\repos\\Sales-Date-Predition\\SalesDatePrediction\\src\\SalesDatePrediction.Application\\SalesDatePrediction.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
