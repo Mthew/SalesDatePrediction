@@ -28,7 +28,7 @@ Para ejecutar el proyecto, sigue estos pasos:
 
 ## JSON de Pedido (API creación de orden con sus respectivos detalles)
 
-Este documento describe la estructura de un JSON de pedido utilizado en una API.
+documentacion de API para crear ordenes en la base de datos de ejemplo, esta api permite crear el encabezado de la orden, como sus productos asociados en el detalle de la orden.
 
 ### Ejemplo de JSON
 
