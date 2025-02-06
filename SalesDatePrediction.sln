@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{510A2115-DF1C-4292-B27F-6D2C8B20F205}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{CA10FBF9-2450-4420-B49D-C046C63173DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{6B818068-3781-4D3C-9F32-CA3D77DCDDEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{79413E9D-3981-4611-847A-8B247BCAFCE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{CDD15114-AD27-4258-87D8-7A52C8CD3B2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C6F1552C-C705-4738-B974-9B2C315BC064}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesDatePrediction.Application", "src\SalesDatePrediction.Application\SalesDatePrediction.Application.csproj", "{30FDE40F-19CC-4893-9576-F6C603E0F465}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesDatePrediction.DataBase", "src\SalesDatePrediction.DataBase\SalesDatePrediction.DataBase.csproj", "{F4857D90-8A0B-4879-9194-5DB35326B0EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesDatePrediction.Domain", "src\SalesDatePrediction.Domain\SalesDatePrediction.Domain.csproj", "{03E20FFA-280E-4C20-9CDB-FFCA77FE1023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesDatePrediction.API", "src\SalesDatePrediction.API\SalesDatePrediction.API.csproj", "{F52B0E76-FE29-4DA4-B0DB-3C35E245B179}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30FDE40F-19CC-4893-9576-F6C603E0F465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30FDE40F-19CC-4893-9576-F6C603E0F465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30FDE40F-19CC-4893-9576-F6C603E0F465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30FDE40F-19CC-4893-9576-F6C603E0F465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4857D90-8A0B-4879-9194-5DB35326B0EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4857D90-8A0B-4879-9194-5DB35326B0EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4857D90-8A0B-4879-9194-5DB35326B0EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4857D90-8A0B-4879-9194-5DB35326B0EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03E20FFA-280E-4C20-9CDB-FFCA77FE1023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03E20FFA-280E-4C20-9CDB-FFCA77FE1023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03E20FFA-280E-4C20-9CDB-FFCA77FE1023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03E20FFA-280E-4C20-9CDB-FFCA77FE1023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F52B0E76-FE29-4DA4-B0DB-3C35E245B179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F52B0E76-FE29-4DA4-B0DB-3C35E245B179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F52B0E76-FE29-4DA4-B0DB-3C35E245B179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F52B0E76-FE29-4DA4-B0DB-3C35E245B179}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CA10FBF9-2450-4420-B49D-C046C63173DE} = {510A2115-DF1C-4292-B27F-6D2C8B20F205}
+		{6B818068-3781-4D3C-9F32-CA3D77DCDDEF} = {510A2115-DF1C-4292-B27F-6D2C8B20F205}
+		{79413E9D-3981-4611-847A-8B247BCAFCE3} = {510A2115-DF1C-4292-B27F-6D2C8B20F205}
+		{30FDE40F-19CC-4893-9576-F6C603E0F465} = {6B818068-3781-4D3C-9F32-CA3D77DCDDEF}
+		{F4857D90-8A0B-4879-9194-5DB35326B0EC} = {79413E9D-3981-4611-847A-8B247BCAFCE3}
+		{03E20FFA-280E-4C20-9CDB-FFCA77FE1023} = {6B818068-3781-4D3C-9F32-CA3D77DCDDEF}
+		{F52B0E76-FE29-4DA4-B0DB-3C35E245B179} = {CA10FBF9-2450-4420-B49D-C046C63173DE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD28CF12-D805-42CF-8C64-3CC70DC259E1}
+	EndGlobalSection
+EndGlobal

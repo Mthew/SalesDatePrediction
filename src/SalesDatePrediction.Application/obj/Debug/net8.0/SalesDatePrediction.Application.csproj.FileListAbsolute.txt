@@ -1,0 +1,11 @@
+C:\Users\DesarolloMatipos5\source\repos\SalesDatePrediction\src\SalesDatePrediction.Application\bin\Debug\net8.0\SalesDatePrediction.Application.deps.json
+C:\Users\DesarolloMatipos5\source\repos\SalesDatePrediction\src\SalesDatePrediction.Application\bin\Debug\net8.0\SalesDatePrediction.Application.dll
+C:\Users\DesarolloMatipos5\source\repos\SalesDatePrediction\src\SalesDatePrediction.Application\bin\Debug\net8.0\SalesDatePrediction.Application.pdb
+C:\Users\DesarolloMatipos5\source\repos\SalesDatePrediction\src\SalesDatePrediction.Application\obj\Debug\net8.0\SalesDatePrediction.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DesarolloMatipos5\source\repos\SalesDatePrediction\src\SalesDatePrediction.Application\obj\Debug\net8.0\SalesDatePrediction.Application.AssemblyInfoInputs.cache
+C:\Users\DesarolloMatipos5\source\repos\SalesDatePrediction\src\SalesDatePrediction.Application\obj\Debug\net8.0\SalesDatePrediction.Application.AssemblyInfo.cs
+C:\Users\DesarolloMatipos5\source\repos\SalesDatePrediction\src\SalesDatePrediction.Application\obj\Debug\net8.0\SalesDatePrediction.Application.csproj.CoreCompileInputs.cache
+C:\Users\DesarolloMatipos5\source\repos\SalesDatePrediction\src\SalesDatePrediction.Application\obj\Debug\net8.0\SalesDatePrediction.Application.dll
+C:\Users\DesarolloMatipos5\source\repos\SalesDatePrediction\src\SalesDatePrediction.Application\obj\Debug\net8.0\refint\SalesDatePrediction.Application.dll
+C:\Users\DesarolloMatipos5\source\repos\SalesDatePrediction\src\SalesDatePrediction.Application\obj\Debug\net8.0\SalesDatePrediction.Application.pdb
+C:\Users\DesarolloMatipos5\source\repos\SalesDatePrediction\src\SalesDatePrediction.Application\obj\Debug\net8.0\ref\SalesDatePrediction.Application.dll
