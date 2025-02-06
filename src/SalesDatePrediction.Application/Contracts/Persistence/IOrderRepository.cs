@@ -1,4 +1,5 @@
-﻿using SalesDatePrediction.Domain;
+﻿using SalesDatePrediction.Application.Feature.Order.Commands.Create;
+using SalesDatePrediction.Domain;
 
 namespace SalesDatePrediction.Application.Contracts.Persistence
 {
@@ -6,5 +7,6 @@ namespace SalesDatePrediction.Application.Contracts.Persistence
     {
         Task<List<Order>> GetByCustomerId(int customerId);
         Task<List<SaleDatePredictionList>> GetSaleDatePredictions();
+        Task<int> CreateOrderWithDeatils(CreateOrderWithDetailsCommand command);
     }
 }
