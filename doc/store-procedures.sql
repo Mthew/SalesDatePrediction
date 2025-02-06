@@ -46,20 +46,19 @@ GO
 -- Version:		1.0.1
 -- Description:	Procedimiento almacenado para crear una orden con sus respectivos detalles
 -- =============================================
---CREATE PROCEDURE [dbo].[sp_AddOrderWithDetails](
-declare
-	@Empid INT = 1,
-	@Shipperid INT = 1,
-	@Shipname NVARCHAR(80) = '1',
-	@Shipaddress NVARCHAR(120) = '1',
-	@Shipcity NVARCHAR(30) = '1', 
-	@Orderdate DATETIME = getdate,
-	@Requireddate DATETIME = getdate,
-	@Shippeddate DATETIME = getdate,
-	@Freight MONEY = 1,
-	@Shipcountry NVARCHAR(30) = '1',
-	@DetailsJson NVARCHAR(MAX) = N'[{"Orderid":1,"Productid":101,"Unitprice":25.5,"Qty":2,"Discount":0.1},{"Orderid":2,"Productid":102,"Unitprice":15.75,"Qty":3,"Discount":0.05},{"Orderid":3,"Productid":103,"Unitprice":30,"Qty":1,"Discount":0.15},{"Orderid":4,"Productid":104,"Unitprice":22.25,"Qty":4,"Discount":0.2},{"Orderid":5,"Productid":105,"Unitprice":18,"Qty":5,"Discount":0.1},{"Orderid":6,"Productid":106,"Unitprice":12.5,"Qty":2,"Discount":0.25},{"Orderid":7,"Productid":107,"Unitprice":27,"Qty":3,"Discount":0.05},{"Orderid":8,"Productid":108,"Unitprice":35,"Qty":1,"Discount":0.15},{"Orderid":9,"Productid":109,"Unitprice":20,"Qty":4,"Discount":0.2},{"Orderid":10,"Productid":110,"Unitprice":14.25,"Qty":5,"Discount":0.1}]';
---) AS BEGIN	
+CREATE PROCEDURE [dbo].[sp_AddOrderWithDetails](
+	@Empid INT,
+	@Shipperid INT,
+	@Shipname NVARCHAR(80),
+	@Shipaddress NVARCHAR(120),
+	@Shipcity NVARCHAR(30), 
+	@Orderdate DATETIME,
+	@Requireddate DATETIME,
+	@Shippeddate DATETIME,
+	@Freight MONEY,
+	@Shipcountry NVARCHAR(30),
+	@DetailsJson NVARCHAR(MAX)
+) AS BEGIN	
 
 	DROP TABLE IF EXISTS #TempOrderDetails
 	CREATE TABLE #TempOrderDetails (		
@@ -93,21 +92,22 @@ declare
 END
 
 
---DECLARE @DetailsJson NVARCHAR(MAX) = N'[{"Orderid":1,"Productid":101,"Unitprice":25.5,"Qty":2,"Discount":0.1},{"Orderid":2,"Productid":102,"Unitprice":15.75,"Qty":3,"Discount":0.05},{"Orderid":3,"Productid":103,"Unitprice":30,"Qty":1,"Discount":0.15},{"Orderid":4,"Productid":104,"Unitprice":22.25,"Qty":4,"Discount":0.2},{"Orderid":5,"Productid":105,"Unitprice":18,"Qty":5,"Discount":0.1},{"Orderid":6,"Productid":106,"Unitprice":12.5,"Qty":2,"Discount":0.25},{"Orderid":7,"Productid":107,"Unitprice":27,"Qty":3,"Discount":0.05},{"Orderid":8,"Productid":108,"Unitprice":35,"Qty":1,"Discount":0.15},{"Orderid":9,"Productid":109,"Unitprice":20,"Qty":4,"Discount":0.2},{"Orderid":10,"Productid":110,"Unitprice":14.25,"Qty":5,"Discount":0.1}]'
 
 
-[dbo].[sp_GetSalesDatePrediction]
 
+EXEC [dbo].[sp_GetSalesDatePrediction]
 
-[dbo].[sp_AddOrderWithDetails] @Empid=1,
-	@Shipperid=1,
+exec [dbo].[sp_AddOrderWithDetails] 
+	@Empid='1',
+	@Shipperid='1',
 	@Shipname='1',
 	@Shipaddress='1',
 	@Shipcity='1',
-	@Orderdate=getdate,
-	@Requireddate=getdate,
-	@Shippeddate=getdate,
+	@Orderdate='2024-12-07',
+	@Requireddate='2024-12-07',
+	@Shippeddate='2024-12-07',
 	@Freight=1,
 	@Shipcountry='1',
-	@DetailsJson=  N'[{"Orderid":1,"Productid":101,"Unitprice":25.5,"Qty":2,"Discount":0.1},{"Orderid":2,"Productid":102,"Unitprice":15.75,"Qty":3,"Discount":0.05},{"Orderid":3,"Productid":103,"Unitprice":30,"Qty":1,"Discount":0.15},{"Orderid":4,"Productid":104,"Unitprice":22.25,"Qty":4,"Discount":0.2},{"Orderid":5,"Productid":105,"Unitprice":18,"Qty":5,"Discount":0.1},{"Orderid":6,"Productid":106,"Unitprice":12.5,"Qty":2,"Discount":0.25},{"Orderid":7,"Productid":107,"Unitprice":27,"Qty":3,"Discount":0.05},{"Orderid":8,"Productid":108,"Unitprice":35,"Qty":1,"Discount":0.15},{"Orderid":9,"Productid":109,"Unitprice":20,"Qty":4,"Discount":0.2},{"Orderid":10,"Productid":110,"Unitprice":14.25,"Qty":5,"Discount":0.1}]';
+	@DetailsJson= N'[{\"Productid\":1,\"Unitprice\":25.5,\"Qty\":2,\"Discount\":0.1},{\"Productid\":2,\"Unitprice\":15.75,\"Qty\":3,\"Discount\":0.05}]';
+
 

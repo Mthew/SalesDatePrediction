@@ -26,4 +26,61 @@ Para ejecutar el proyecto, sigue estos pasos:
    - Crear la suit de testing
    - implemetar el front-end en angular 17
 
-Siguiendo estos pasos, podrás configurar y ejecutar el proyecto correctamente.
+## JSON de Pedido (API creación de orden con sus respectivos detalles)
+
+Este documento describe la estructura de un JSON de pedido utilizado en una API.
+
+### Ejemplo de JSON
+
+```json
+[
+  {
+    "empid": 1,
+    "shipperid": 1,
+    "shipname": "string",
+    "shipaddress": "string",
+    "shipcity": "string",
+    "orderdate": "2025-02-06",
+    "requireddate": "2025-02-06",
+    "shippeddate": "2025-02-06",
+    "freight": 1,
+    "shipcountry": "string",
+    "detailsJson": "[{\"Productid\":1,\"Unitprice\":25.5,\"Qty\":2,\"Discount\":0.1},{\"Productid\":2,\"Unitprice\":15.75,\"Qty\":3,\"Discount\":0.05}]"
+  }
+]
+```
+
+### Descripción de los Campos
+
+| Campo          | Tipo   | Descripción                                                                             |
+| -------------- | ------ | --------------------------------------------------------------------------------------- |
+| `empid`        | Número | ID del empleado que generó el pedido.                                                   |
+| `shipperid`    | Número | ID del transportista.                                                                   |
+| `shipname`     | String | Nombre del destinatario del envío.                                                      |
+| `shipaddress`  | String | Dirección de envío.                                                                     |
+| `shipcity`     | String | Ciudad de envío.                                                                        |
+| `orderdate`    | Fecha  | Fecha en la que se realizó el pedido.                                                   |
+| `requireddate` | Fecha  | Fecha requerida para la entrega.                                                        |
+| `shippeddate`  | Fecha  | Fecha en la que se envió el pedido.                                                     |
+| `freight`      | Número | Costo del flete.                                                                        |
+| `shipcountry`  | String | País de envío.                                                                          |
+| `detailsJson`  | String | JSON anidado con los detalles del pedido (productos, precios, cantidades y descuentos). |
+
+### Ejemplo de `detailsJson`
+
+```json
+[
+  {
+    "Productid": 1,
+    "Unitprice": 25.5,
+    "Qty": 2,
+    "Discount": 0.1
+  },
+  {
+    "Productid": 2,
+    "Unitprice": 15.75,
+    "Qty": 3,
+    "Discount": 0.05
+  }
+]
+```

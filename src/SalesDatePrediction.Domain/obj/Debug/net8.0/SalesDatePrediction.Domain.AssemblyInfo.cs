@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SalesDatePrediction.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+180875764bb55e88796a2b595f7dfdbafa13c78b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a795c7f3cbe9f155a566627e0a1848d61e8e6fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("SalesDatePrediction.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SalesDatePrediction.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
